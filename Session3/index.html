@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        background-image: url("https://wallpaper.dog/large/10940914.jpg");
+        height: 100vh;
+        width: 100vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all 0.5s ease-in-out;
+      }
+      #left,
+      #right {
+        background-color: rgb(226, 226, 226);
+      }
+      #left {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: rotate(180deg);
+        border-radius: 10px;
+      }
+      #right {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        border-radius: 10px;
+      }
+      .Mini-Img {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        opacity: 0.8;
+      }
+      .my-img {
+        transition: all 0.5s ease-in-out;
+        padding-right: 20px;
+      }
+
+      .my-img.active {
+        scale: 1.1;
+        position: relative;
+        z-index: 1;
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="prev">
+        <img
+          onclick="prev()"
+          src="https://static.vecteezy.com/system/resources/previews/010/146/774/original/arrow-icon-sign-symbol-design-free-png.png"
+          alt=""
+          height="45px"
+          width="45px"
+          id="left"
+        />
+        <img
+          onclick="next()"
+          src="https://static.vecteezy.com/system/resources/previews/010/146/774/original/arrow-icon-sign-symbol-design-free-png.png"
+          alt=""
+          height="45px"
+          width="45px"
+          id="right"
+        />
+      </div>
+      <div class="Mini-Img">
+        <img
+          src="https://wallpaper.dog/large/10940914.jpg"
+          alt=""
+          class="my-img"
+          height="100px"
+          width="200px"
+        />
+        <img
+          src="http://getwallpapers.com/wallpaper/full/e/1/4/169557.jpg"
+          alt=""
+          class="my-img"
+          height="100px"
+          width="200px"
+        />
+        <img
+          src="https://wallpaperaccess.com/full/38636.jpg"
+          alt=""
+          class="my-img"
+          height="100px"
+          width="200px"
+        />
+        <img
+          src="https://cdn.wallpapersafari.com/47/55/Sg5pZF.jpg"
+          alt=""
+          class="my-img"
+          height="100px"
+          width="200px"
+        />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
