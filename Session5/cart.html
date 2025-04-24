@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-x: hidden;
+      }
+      #container {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      #box {
+        min-height: 800px;
+        width: 450px;
+        border: 2px solid rgb(181, 181, 181);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        border-radius: 25px;
+        box-shadow: 0px 2px 2px 0px;
+        margin: 30px;
+        transition: 0.5s;
+      }
+      #box:hover {
+        scale: 1.05;
+      }
+      #img {
+        height: 300px;
+        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #container h2,
+      h3 {
+        text-align: center;
+        text-wrap: wrap;
+        padding: 15px;
+      }
+      #container button {
+        height: 60px;
+        width: 300px;
+        border: 3px solid rgb(12, 12, 72);
+        background: none;
+        font-size: 20px;
+        font-weight: bolder;
+        border-radius: 10px;
+        color: rgb(12, 12, 72);
+        transition: 0.5s;
+      }
+      #container button:hover {
+        background-color: rgb(12, 12, 72);
+        border: none;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+    <script src="cart.js"></script>
+  </body>
+</html>
