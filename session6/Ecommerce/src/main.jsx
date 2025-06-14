@@ -1,12 +1,11 @@
-import { createRoot } from 'react-dom/client'
-import {Button,Button2} from './App'
-import Navbar from './Navbar'
-import Example from './Home'
-import WebRoutes from './Routes'
+import React from "react";
+import { createRoot } from "react-dom/client";
+import WebRoutes from "./Routes";
 
+// createRoot - combines the real dom into virtual dom to implement the single page application
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <div>
     <WebRoutes />
   </div>
-)
+);
